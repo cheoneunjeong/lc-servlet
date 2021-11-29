@@ -52,7 +52,7 @@ public class DispatcherServlet extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		
 		ModelAndView mv = new ModelAndView(request, response);
-		ControllerAdpater controller = HandlerMapping.getController(mv);
+		ControllerAdapter controller = HandlerMapping.getController(mv);
 		mv = HandlerAdapter.execute(controller, mv);
 		ViewResolver.setView(mv);
 		forwardOrRedirect(mv);

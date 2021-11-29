@@ -27,7 +27,7 @@ public class ApplicationContext {
 		dataSource = new DataSourcePoolJdbc();
 		userService = new UserService();
 		userDao = new UserDaoImpl();
-		jdbcTemplate = new jdbcTemplate();
+		jdbcTemplate = new JdbcTemplate();
 		
 		jdbcTemplate.setDataSource(dataSource);
 		userDao.setJdbcTemplate(jdbcTemplate);
@@ -40,3 +40,4 @@ public class ApplicationContext {
 		return beans.get(beanName);
 	}
 
+}
