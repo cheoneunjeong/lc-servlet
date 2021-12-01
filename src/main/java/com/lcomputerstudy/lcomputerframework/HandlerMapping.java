@@ -34,10 +34,10 @@ public class HandlerMapping {
 			Enumeration<URL> resources = classLoader.getResources(path);
 			List<File> dirs = new ArrayList<File>();
 			while (resources.hasMoreElements()) {
-				URL resource =resources.nextElement();
-				URI uri = new URI(resource.toString());
-				dirs.add(new File(uri.getPath()));
-			}
+			        URL resource = resources.nextElement();
+			        URI uri = new URI(resource.toString());
+			        dirs.add(new File(uri.getPath()));
+			    }
 			
 			for (File directory : dirs) {
 				classes.addAll(findClasses(directory, packageName));
