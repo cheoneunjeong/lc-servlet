@@ -10,7 +10,7 @@ public class DataSourcePoolJdbc implements DataSource {
 	MariaDbPoolDataSource pool = null;
 	
 	public DataSourcePoolJdbc() {
-		String server = "jdbc:mysql://localhost:3306/lcomputer";
+		String server = "jdbc:mysql://localhost:3306/jung";
 		String id = "root";
 		String password = "1234";
 		pool = new MariaDbPoolDataSource(server+"?user="+id+"&password="+password+"&maxPoolSize=10");

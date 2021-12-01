@@ -9,39 +9,39 @@
 		<servlet-class>com.lcomputerstudy.lcomputerframework.DispatcherServlet</servlet-class>
 		
 		<init-param>
-						<param-name>controllerPackage</param-name>
-						<param-value>com.lcomputerstudy.demo.cotroller</param-value>
-				</init-param>
-				<init-param>
-						<param-name>prefix</param-name>
-						<param-value></param-value>
-				</init-param>
-				<init-param>
-						<param-name>suffix</param-name>
-						<param-value>.jsp</param-value>
-				</init-param>
-				
-				<load-on-startup>1</load-on-startup>
-		</servlet>
-	
-		<servlet-mapping>
-				<servlet-name>frontController</servlet-name>
-				<url-pattern>*.do</url-pattern>
-		</servlet-mapping>
-	
-		<context-param>
-				<param-name>dbId</param-name>
-				<param-value>test</param-value>
-		</context-param>
-		<context-param>
-				<param-name>dbPassword</param-name>
-				<param-value>1234</param-value>
-		</context-param>
+				<param-name>controllerPackage</param-name>
+				<param-value>com.lcomputerstudy.demo.cotroller</param-value>
+		</init-param>
+		<init-param>
+				<param-name>prefix</param-name>
+				<param-value></param-value>
+		</init-param>
+		<init-param>
+				<param-name>suffix</param-name>
+				<param-value>.jsp</param-value>
+		</init-param>
 		
-		<filter>
-				<filter-name>SessionFilter</filter-name>
-				<filter-class>com.lcomputerstudy.lcomputerframework.filter.SessionFilter</filter-class>
-		</filter>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>frontController</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	
+	<context-param>
+		<param-name>dbId</param-name>
+		<param-value>test</param-value>
+	</context-param>
+	<context-param>
+		<param-name>dbPassword</param-name>
+		<param-value>1234</param-value>
+	</context-param>
+	
+	<filter>
+		<filter-name>SessionFilter</filter-name>
+		<filter-class>com.lcomputerstudy.lcomputerframework.filter.SessionFilter</filter-class>
+	</filter>
 	<filter-mapping>
 		<filter-name>SessionFilter</filter-name>
 		<url-pattern>/*</url-pattern>
