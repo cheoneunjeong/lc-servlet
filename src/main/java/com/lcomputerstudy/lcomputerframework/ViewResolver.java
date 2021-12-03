@@ -14,7 +14,7 @@ public class ViewResolver {
 	public static ModelAndView setView(ModelAndView mv) {
 		String fullPathView = prefix + mv.getViewName() + suffix;
 		
-		System.out.println("ViewResolver Í∞Ä View Î•º ÏÉùÏÑ± Î∞è ÏÑ§Ï†ï: " + fullPathView);
+		System.out.println("ViewResolver ∞° View ∏¶ ª˝º∫ π◊ º≥¡§ " + fullPathView);
 		
 		View view = new View(fullPathView);
 		mv.setView(view);

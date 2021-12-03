@@ -22,7 +22,7 @@ public class ApplicationContext {
 	
 	public static void init() {
 		
-		System.out.println("Applicationcontext (ì»¨í…Œì´ë„ˆ) ê°€ Baenì„ ìƒì„± ë° ê´€ë¦¬");
+		System.out.println("ApplicationContext (ÄÁÅ×ÀÌ³Ê) °¡ Bean À» »ı¼º ¹× °ü¸®");
 		
 		dataSource = new DataSourcePoolJdbc();
 		userService = new UserService();

@@ -115,7 +115,7 @@ public class HandlerMapping {
 	}
 	
 	public static ControllerAdapter getController(ModelAndView mv) {
-		System.out.println("HandlerMapping 이 요청 URI에 해당하는 Controller 를 반환");
+		System.out.println("HandlerMapping �씠 �슂泥� URI�뿉 �빐�떦�븯�뒗 Controller 瑜� 諛섑솚");
 		HttpServletRequest request = mv.getRequest();
 		
 		String requestURI = request.getRequestURI();
