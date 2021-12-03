@@ -14,7 +14,7 @@ public class DataSourceLegacyJdbc implements DataSource {
 	public Connection getConnection() throws SQLException, ClassNotFoundException {
 		Connection conn  = null;
 		
-		String url = "jdbc:mysql://location:3306/lcomputer";
+		String url = "jdbc:mysql://localhost:3306/jung";
 		String id = "root";
 		String pw = "1234";
 		
